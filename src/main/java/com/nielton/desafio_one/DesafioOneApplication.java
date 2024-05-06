@@ -40,7 +40,8 @@ public class DesafioOneApplication implements CommandLineRunner {
 		double totalValue = orderService.total(order) + shippingService.shipment(order);
 
 		System.out.println();
-		System.out.printf("Valor total = %.2f%n", totalValue);
+		System.out.println("Pedido código "+ code);
+		System.out.printf("Valor total: R$ %.2f%n", totalValue);
 		sc.close();
 	}
 }
